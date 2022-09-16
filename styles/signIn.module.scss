@@ -13,8 +13,8 @@ $alt-color: #b4a889;
   .logo {
     position: relative;
     bottom: 50px;
-    height: 65px;
-    width: 65px;
+    height: 95px;
+    width: 95px;
     border: 1px solid #000;
     color: #000;
     justify-content: center;
@@ -33,36 +33,36 @@ $alt-color: #b4a889;
     background-color: $main-color;
     border-radius: 10px;
     min-width: 500px;
-  }
 
-  .login > input {
-    width: 60%;
-    height: 33px;
-    border-radius: 5px;
-    background-color: $alt-color;
-    margin: 1.5rem;
-    padding: 10px;
-    color: $sub-color;
-  }
+    > input {
+      width: 60%;
+      height: 40px;
+      border-radius: 5px;
+      background-color: $alt-color;
+      margin: 1rem;
+      padding: 10px;
+      color: $sub-color;
+    }
 
-  .login > ::placeholder {
-    color: $sub-color;
-  }
-  .button {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #000;
-    border-radius: 5px;
-    width: 60%;
-    height: 40px;
-    margin: 2rem 0 4rem;
-  }
-  .button:active {
-    transition: ease 0.5s;
-    transform: scale(0.9);
+    > ::placeholder {
+      color: $sub-color;
+    }
+    > .button {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: #000;
+      border-radius: 5px;
+      width: 60%;
+      height: 40px;
+      margin: 2rem 0 4rem;
+    }
+    .button:active {
+      transition: ease 0.5s;
+      transform: scale(0.9);
+    }
   }
   .footer {
     display: flex;
@@ -70,16 +70,17 @@ $alt-color: #b4a889;
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-end;
-  }
-  .footer > span {
-    position: absolute;
-    bottom: 40px;
-    right: 140px;
-    color: $sub-color;
-  }
-  a {
-    color: $alt-color;
-    font-style: oblique;
+
+    > span {
+      position: absolute;
+      bottom: 40px;
+      right: 140px;
+      color: $sub-color;
+    }
+    a {
+      color: $alt-color;
+      font-style: oblique;
+    }
   }
 }
 

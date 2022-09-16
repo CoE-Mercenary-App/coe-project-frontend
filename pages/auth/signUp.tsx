@@ -30,18 +30,8 @@ const SignUp = () => {
       <div className={Styles.login}>
         <div className={Styles.logo}>Logo?</div>
         <div className={Styles.column}>
-          <input
-            type="text"
-            name="fullname"
-            placeholder="Fullname"
-            data-e2e-id="fullname"
-          />
-          <input
-            type="select"
-            name="role"
-            placeholder="Role"
-            data-e2e-id="role"
-          />
+          <input type="text" name="fullname" placeholder="Fullname" />
+          <input type="select" name="role" placeholder="Role" />
         </div>
         <div className={Styles.column2}>
           <input type="text" name="location" placeholder="Location" />
