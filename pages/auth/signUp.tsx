@@ -16,8 +16,6 @@ const SignUp = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { fullname, role, location, industry, email, password } = formFields;
 
-  //HTML Element > React (Typescript)
-
   const handleSubmit = async (e: any) => {
     e.preventDefault();
   };
@@ -35,15 +33,19 @@ const SignUp = () => {
           <input type="text" name="fullname" placeholder="Fullname" />
           <input type="select" name="role" placeholder="Role" />
         </div>
-        <div className={Styles.column}>
+        <div className={Styles.column2}>
           <input type="text" name="location" placeholder="Location" />
           <input type="text" name="industry" placeholder="Industry" />
         </div>
-        <input type="email" name="email" placeholder="Email" />
-        <input type="password" name="password" placeholder="Password" />
-        <label htmlFor="password" id="password"></label>
-        <input type="password" name="password" placeholder="Repeat Password" />
-        <label htmlFor="password" id="password"></label>
+        <div className={Styles.column3}>
+          <input type="email" name="email" placeholder="Email" />
+          <input type="password" name="password" placeholder="Password" />
+          <input
+            type="password"
+            name="password"
+            placeholder="Repeat Password"
+          />
+        </div>
         <button className={Styles.button} type="button">
           Sign Up
         </button>
